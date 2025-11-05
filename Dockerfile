@@ -17,6 +17,9 @@ WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
+# Disable Next.js telemetry during build
+ENV NEXT_TELEMETRY_DISABLED=1
+
 # Build the application
 RUN corepack enable pnpm && pnpm run build
 

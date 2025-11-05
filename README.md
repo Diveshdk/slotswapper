@@ -4,8 +4,8 @@ A modern, full-stack web application for peer-to-peer time slot scheduling and s
 
 ## 🚀 Live Demo
 
-- **Frontend**: [Your deployed application URL here]
-- **API Documentation**: Available at `/api-test` when running locally
+- **Live Demo**: [Your deployed application URL here]
+- **API Documentation**: Test endpoints using curl or your preferred API client
 
 ## 📋 Project Overview
 
@@ -119,7 +119,6 @@ Authorization: Bearer <your-jwt-token>
 |--------|----------|-------------|
 | `GET` | `/api/test` | Test API connection and user authentication |
 | `GET` | `/api/health` | Health check endpoint |
-| `GET` | `/api-test` | Interactive API testing interface |
 
 ### Example Requests
 
@@ -140,9 +139,6 @@ curl -X POST http://localhost:3000/api/swap-response/request-uuid \
 ```
 
 ## 🧪 Testing the API
-
-### Interactive Testing
-Visit `http://localhost:3000/api-test` for a web-based API testing interface.
 
 ### Manual Testing
 1. **Login** at `http://localhost:3000/auth/login`
