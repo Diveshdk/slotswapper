@@ -4,7 +4,7 @@ A modern, full-stack web application for peer-to-peer time slot scheduling and s
 
 ## 🚀 Live Demo
 
-- **Live Demo**: [Your deployed application URL here]
+- **Live Demo**: https://slotswapper-chi.vercel.app
 - **API Documentation**: Test endpoints using curl or your preferred API client
 
 ## 📋 Project Overview
@@ -253,11 +253,6 @@ npm start
 ### Database
 Run the provided SQL scripts in your Supabase project.
 
-## 📝 Additional Documentation
-
-- **API Documentation**: Complete details in `/SWAP_API_DOCUMENTATION.md`
-- **Firebase Cleanup**: See `/FIREBASE_CLEANUP_SUMMARY.md`
-- **UI Changes**: See `/UI_COLOR_FIX_SUMMARY.md`
 
 ## 🤝 Contributing
 
@@ -267,14 +262,8 @@ Run the provided SQL scripts in your Supabase project.
 4. Add tests if applicable
 5. Submit a pull request
 
-## 📄 License
-
-This project is licensed under the MIT License.
-
 ## 📞 Support
 
-For questions or issues, please contact [your-email] or create an issue in the repository.
+For questions or issues, please contact kankanifivesh6@gmail.com or create an issue in the repository.
 
----
 
-**Built with ❤️ using Next.js and Supabase**
