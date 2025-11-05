@@ -1,0 +1,49 @@
+# Render Deployment Configuration
+
+# render.yaml - Render Blueprint
+services:
+  - type: web
+    name: slotswapper
+    env: docker
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NEXT_PUBLIC_SUPABASE_URL
+        sync: false
+      - key: NEXT_PUBLIC_SUPABASE_ANON_KEY
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: SUPABASE_POSTGRES_URL
+        sync: false
+      - key: SUPABASE_POSTGRES_USER
+        sync: false
+      - key: SUPABASE_POSTGRES_HOST
+        sync: false
+      - key: SUPABASE_JWT_SECRET
+        sync: false
+      - key: SUPABASE_POSTGRES_PRISMA_URL
+        sync: false
+      - key: SUPABASE_POSTGRES_PASSWORD
+        sync: false
+      - key: SUPABASE_POSTGRES_DATABASE
+        sync: false
+      - key: SUPABASE_POSTGRES_URL_NON_POOLING
+        sync: false
+
+# Instructions for Render deployment:
+# 1. Connect your GitHub repository to Render
+# 2. Create a new Web Service
+# 3. Select "Docker" as the environment
+# 4. Set the Dockerfile path to "./Dockerfile"
+# 5. Add all environment variables in the Render dashboard
+# 6. Deploy!
+#
+# Or use the Blueprint:
+# 1. Fork/clone this repository
+# 2. Create a new Blueprint on Render
+# 3. Point it to your repository
+# 4. Configure environment variables
+# 5. Deploy
