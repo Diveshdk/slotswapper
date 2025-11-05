@@ -2,6 +2,9 @@
 
 import { useEffect, useState, useCallback } from "react"
 import { createClient } from "@/lib/supabase/client"
+
+// Force dynamic rendering to prevent build-time errors
+export const dynamic = 'force-dynamic'
 import { Sidebar } from "@/components/sidebar"
 import { CreateEventDialog } from "@/components/create-event-dialog"
 import { CalendarView } from "@/components/calendar-view"
